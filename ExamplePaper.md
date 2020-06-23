@@ -12,7 +12,7 @@ author:
 	  addr: Coventry, UK
 	  email: aa9863@coventry.ac.uk
 
-documentclass: Template/IEEEtran
+documentclass: templates/IEEEtran
 classoption:
 	- conference
 
