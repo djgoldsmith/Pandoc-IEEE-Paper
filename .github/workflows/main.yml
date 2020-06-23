@@ -9,4 +9,8 @@ jobs:
     steps:
       - uses: docker://dang42/pandoc-ieee
         with:
-          args: --standalone --filter=pandoc-citeproc --filter=Template/tablefilter.py --template=Template/ieee.latex --output=output.pdf ExamplePaper.md
+          args: pandoc -o testing.html README.md
+
+
+          #entrypoint: script.sh
+          #args: --filter=pandoc-citeproc --filter=Template/tablefilter.py --template=Template/ieee.latex --output=output.pdf ExamplePaper.md
