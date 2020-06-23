@@ -2,12 +2,12 @@
 title:  Example IEEE Paper Generated Through Markdown
 author:
 	- name: Dan Goldsmith
-	  dept: Instutute of Coding
+	  dept: Institute of Coding
 	  affiliation: Coventry University
 	  addr: Coventry, UK
 	  email: aa9863@coventry.ac.uk
-	- name: James Shuttleworth
-      dept: Instutute of Coding
+	- name: A Second Author
+      dept: Institute of Coding
 	  affiliation: Coventry University
 	  addr: Coventry, UK
 	  email: aa9863@coventry.ac.uk
@@ -23,7 +23,7 @@ biblio-title:  "References"
 #Finally the Bibtex file for your references.
 bibliography: example-bib.bib
 
-
+# Adjust Pandoc generated prefixes to be correct.
 figPrefix:
 	- "Fig"
 	- "Figs."
@@ -35,21 +35,21 @@ secPrefix:
 
 # Introduction
 
-Writing papers in Word Sucks.  But LaTeX is (apparrently) hard to use.
+Writing papers in Word Sucks.  But LaTeX is (apparently) hard to use.
 
  
 # Motivation
 
-Markdown has the benefits of LaTex without the steep learning curve.
+Markdown has the benefits of LaTeX without the steep learning curve.
 
-# Supported formatting{#sec:formatting}
+# Supported formatting
 
 Sections Obviously are supported
 
-## Also Subsections are suppoprted
+## Also Subsections are supported
 
 Which is pretty cool. 
-We can also refer back to previous sections 
+
 
 
 ## Maths
