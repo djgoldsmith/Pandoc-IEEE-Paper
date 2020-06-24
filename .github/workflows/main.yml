@@ -11,9 +11,9 @@ jobs:
         uses: actions/checkout@v2
       - uses: docker://dang42/pandoc-ieee
         with:
-          args: "/github/workspace/README.md"
+          args: "README.md"
 
-            #pandoc -o testing.html README.md
+            #pandoc -o testREADME.md
 
 
           #entrypoint: script.sh
