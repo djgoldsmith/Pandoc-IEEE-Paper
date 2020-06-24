@@ -37,6 +37,7 @@ secPrefix:
 
 Writing papers in Word Sucks.  But LaTeX is (apparently) hard to use.
 
+I love writing things in Markdown.  Its bloody awesome.
  
 # Motivation
 
