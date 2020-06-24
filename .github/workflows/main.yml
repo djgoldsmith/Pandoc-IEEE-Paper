@@ -13,7 +13,7 @@ jobs:
         mkdir output
       - uses: docker://dang42/pandoc-ieee
         with:
-          args: "--filter=pandoc-citeproc --filter=templates/tablefilter.py ExamplePaper.md -o output/testing.html"
+          args: "--filter=pandoc-citeproc --filter=templates/tablefilter.py ExamplePaper.md"
 
             #pandoc -o testREADME.md
 
