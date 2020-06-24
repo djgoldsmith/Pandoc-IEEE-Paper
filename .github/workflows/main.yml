@@ -9,9 +9,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - run: |
-        mkdir output
-      - uses: docker://dang42/pandoc-ieee
+      - name: Build Documents
+        uses: docker://dang42/pandoc-ieee
         with:
           args: "--filter=pandoc-citeproc --filter=templates/tablefilter.py ExamplePaper.md"
 
