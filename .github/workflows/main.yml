@@ -9,6 +9,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+      - run: mkdir output
       - name: Build Documents
         uses: docker://dang42/pandoc-ieee
         with:
