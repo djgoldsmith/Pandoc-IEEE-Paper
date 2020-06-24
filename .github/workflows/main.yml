@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: docker://dang42/pandoc-ieee
         with:
-          args: "README.md"
+          args: "-v `pwd`:/data README.md -o foo.html"
 
             #pandoc -o testing.html README.md
 
