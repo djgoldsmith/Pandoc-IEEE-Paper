@@ -14,10 +14,23 @@ jobs:
         uses: docker://dang42/pandoc-ieee
         with:
           args: "--filter=pandoc-citeproc --filter=templates/tablefilter.py --template templates/ieee.latex -o output/output.pdf ExamplePaper.md"
-      - uses: actions/upload-artifact@master
+      - name: Commit Files #Save the files
+        run: |
+          git config --local user.name "djgoldsmith"
+          git add ./output
+          git commit -m "Commit Built paper"
+      - name: Push Changes
+        uses: ad-m/github-push-action@master
         with:
-          name: output
-          path: output
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+      
+      
+      
+      # -- This Stores as an Artifact (But not in the Repo)
+      #- uses: actions/upload-artifact@master
+      #  with:
+      #    name: output
+      #    path: output
 
 
 #args: --filter=pandoc-citeproc --filter=Template/tablefilter.py --template=Template/ieee.latex --output=output.pdf ExamplePaper.md
