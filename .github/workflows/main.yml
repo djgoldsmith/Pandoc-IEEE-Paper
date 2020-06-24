@@ -7,6 +7,8 @@ jobs:
   convert_via_pandoc:
     runs-on: ubuntu-18.04
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
       - uses: docker://dang42/pandoc-ieee
         with:
           args: "/github/workspace/README.md"
