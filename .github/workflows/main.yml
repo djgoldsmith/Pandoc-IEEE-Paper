@@ -13,7 +13,7 @@ jobs:
       - name: Build Documents
         uses: docker://dang42/pandoc-ieee
         with:
-          args: "--filter=pandoc-citeproc --filter=templates/tablefilter.py --template/templates/ieee.latex -o output/output.pdf ExamplePaper.md"
+          args: "--filter=pandoc-citeproc --filter=templates/tablefilter.py --template templates/ieee.latex -o output/output.pdf ExamplePaper.md"
       - uses: actions/upload-artifact@master
         with:
           name: output
